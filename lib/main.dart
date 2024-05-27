@@ -1,3 +1,4 @@
+import 'package:ex06_application/views/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,10 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'App Numérico',
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
+      routes: {
+        '/': (context) => const HomePage(),
+      },
     );
   }
 }
