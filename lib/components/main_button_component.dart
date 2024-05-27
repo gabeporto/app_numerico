@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 ElevatedButton mainButton(
   {
     String buttonText = '',
-    Function()? buttonFunction,
+    required Function() buttonFunction,
     Color buttonColor = const Color(0xFF2c3e50),
     Color textButtonColor = const Color.fromARGB(255, 255, 255, 255),
     double horizontalPadding = 25,
