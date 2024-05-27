@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 
-AppBar appBar(){
+AppBar appBar( 
+  {
+   String title = '',
+   Icon? icon,
+  }) {
+
   return AppBar(
     backgroundColor: Colors.green,
     foregroundColor: Colors.white,
-    leading: const Icon(Icons.tag),
-    title: const Text('App Numérico'),
+    leading: icon,
+    title: Text(title),
   );
 }
